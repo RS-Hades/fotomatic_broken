@@ -183,7 +183,7 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-left: 76px;
+  margin-left: 77px;
 }
 
 #sign-up-cta .content {
@@ -276,6 +276,8 @@ header .mobile {
 
 
 
+
+
 /* Features Section */
 
 #features-section {
@@ -296,6 +298,10 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
 }
 
 .feature h2 {
@@ -337,10 +343,15 @@ header .mobile {
   }
 }
 
+
+
+
+
+
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 64px 0;
   background-color: #4a4a4a;
 }
 
@@ -353,6 +364,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  margin: 0;
 }
 
 #filters-section .content h3 {
@@ -360,11 +372,13 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  margin: 0;
 }
 
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -397,45 +411,52 @@ header .mobile {
   }
 }
 
+
+
+
 /* Quotes Section */
 
 #quotes-section {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-family: Palatino, serif;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
+    height: 46px;
   }
 }
+
+
+
 
 /* Footer */
 
@@ -454,8 +475,8 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
-  footer .content {
-    font-size: .625rem;
+@media only screen and (max-width: 760px) {
+  footer .content span {
+    font-size: 10px;
   }
 }
